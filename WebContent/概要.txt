@@ -1,0 +1,5 @@
+全てのjspファイルに動的インクルード適用
+registerConfirm.jspにEL式をコメントアウトで記述
+index.jspにjs実装
+
+filter\FilterSample.javaにコメントアウトでフィルター記述

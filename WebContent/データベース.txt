@@ -1,0 +1,45 @@
+/* どこつぶ */
+
+-- データベースの作成
+CREATE DATABASE DOCOTSUBU;
+
+-- データベースの選択
+USE DOCOTSUBU;
+
+-- MUTTERテーブルの作成
+CREATE TABLE MUTTER(
+ID INT PRIMARY KEY AUTO_INCREMENT,
+NAME VARCHAR(100) NOT NULL,
+TEXT VARCHAR(255) NOT NULL
+);
+
+-- 仮データの挿入
+INSERT INTO MUTTER(NAME,TEXT)
+VALUES
+('ミナト','今日は良い天気だ！'),
+('アヤベ','そうね！');
+
+-- すべてのつぶやきを取得
+SELECT NAME,TEXT FROM MUTTER;
+
+-- つぶやきを保存する
+INSERT INTO MUTTER (NAME,TEXT)
+VALUES(?,?);
+
+
+-- ACCOUNTテーブル
+USERID   CHAR(10)         PRIMARY KEY
+MANE     VACHAR(100)  NOT NULL
+PASS      VARCHAR(10)  NOT NULL
+MAIL       VARCHAR(40)  NOT NULL
+AGE        INT                    NOT NULL
+
+CREATE TABLE ACCOUNT
+(
+USERID   CHAR(10)         PRIMARY KEY,
+NAME     VARCHAR(100)  NOT NULL,
+PASS      VARCHAR(10)  NOT NULL,
+MAIL       VARCHAR(40)  NOT NULL,
+AGE        INT                    NOT NULL
+);
+
